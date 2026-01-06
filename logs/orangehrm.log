@@ -315,3 +315,10 @@
 2025/12/31 19:34:15: INFO: Test data driven login PASSED
 2025/12/31 19:34:26: INFO: Test data driven login PASSED
 2025/12/31 19:34:26: INFO: Test data driven login overall PASSED
+2026/01/02 11:13:55: INFO: TestLogin01:
+2026/01/02 11:13:55: INFO: test_title_verification started
+2026/01/02 11:13:55: INFO: test_valid_login started
+2026/01/02 11:13:55: INFO: test_invalid_login started
+2026/01/02 11:14:01: INFO: test_title_verification PASSED (title matched)
+2026/01/02 11:14:03: INFO: test_invalid_login PASSED (error message matched)
+2026/01/02 11:14:03: INFO: test_valid_login PASSED (login successful)
