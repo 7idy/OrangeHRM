@@ -29,6 +29,7 @@ def browser(request: pytest.FixtureRequest):
 @pytest.fixture()
 def setup(browser):
     options = Options()
+    options.add_argument("--start-maximized")
     options.add_argument("--disable-save-password-bubble")
     options.add_argument("--disable-notifications")
     options.add_argument("--guest")
@@ -45,7 +46,9 @@ def setup(browser):
         driver = webdriver.Firefox()
     else:
         raise ValueError(f"Unsupported browser: {browser}")
-    return driver
+
+    yield driver # return the driver to the test and wait for the test to complete
+    driver.quit()
 
 # hook to add metadata to the test report (environment info)
 def pytest_configure(config: pytest.Config):

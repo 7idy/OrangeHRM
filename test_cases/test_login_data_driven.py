@@ -1,5 +1,5 @@
 # This test case verifies the login functionality data-driven execution using data from an Excel file.
-from pages.Login_Page import LoginPage
+from pages.login_page import LoginPage
 from utils.read_properties import ReadConfig
 from utils.logger import LoggerMaker
 from utils import excel_utils
