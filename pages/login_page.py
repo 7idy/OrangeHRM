@@ -1,6 +1,5 @@
 # Description: This module contains the LoginPage class which encapsulates
 # the elements and actions related to the login page of a web application.
-from selenium.common import NoSuchElementException
 from selenium.webdriver.chrome.webdriver import WebDriver
 from selenium.webdriver.common.by import By
 from pages.base_page import BasePage
