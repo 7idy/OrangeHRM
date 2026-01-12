@@ -53,7 +53,7 @@ def setup(browser):
 # hook to add metadata to the test report (environment info)
 def pytest_configure(config: pytest.Config):
     config.stash[metadata_key] ["Project Name"] = "OrangeHRM"
-    config.stash[metadata_key] ["Test Module Name"] = "Login"
+    #config.stash[metadata_key] ["Test Module Name"] = "Login"
     config.stash[metadata_key] ["Tester"] = "Bao"
 
 # hook to modify metadata in the test report (remove unwanted fields)

@@ -1,6 +1,44 @@
-2026/01/10 21:25:19: INFO: ----- test_title_verification started -----
-2026/01/10 21:25:24: INFO: test_title_verification PASSED (title matched)
-2026/01/10 21:25:27: INFO: ----- test_valid_login started -----
-2026/01/10 21:25:36: INFO: test_valid_login PASSED (dashboard text matched)
-2026/01/10 21:25:39: INFO: ----- test_invalid_login started -----
-2026/01/10 21:25:47: INFO: test_invalid_login PASSED (error message matched)
+2026/01/12 17:47:51: INFO: ----- test_add_user started -----
+2026/01/12 17:47:57: INFO: test_valid_login PASSED (dashboard text matched)
+2026/01/12 17:48:52: INFO: ----- test_add_user started -----
+2026/01/12 17:48:59: INFO: test_valid_login PASSED (dashboard text matched)
+2026/01/12 17:49:41: INFO: add new user successfully
+2026/01/12 20:10:40: INFO: ----- test_add_user started -----
+2026/01/12 20:10:45: INFO: test_valid_login PASSED (dashboard text matched)
+2026/01/12 20:11:01: INFO: add new user successfully
+2026/01/12 20:12:00: INFO: ----- test_add_user started -----
+2026/01/12 20:12:06: INFO: test_valid_login PASSED (dashboard text matched)
+2026/01/12 20:12:21: INFO: add new user successfully
+2026/01/12 20:13:05: INFO: ----- test_add_user started -----
+2026/01/12 20:13:11: INFO: test_valid_login PASSED (dashboard text matched)
+2026/01/12 20:13:26: INFO: add new user successfully
+2026/01/12 20:17:20: INFO: ----- test_add_user started -----
+2026/01/12 20:17:26: INFO: login successful
+2026/01/12 20:17:41: INFO: add new user successfully
+2026/01/12 20:18:02: INFO: ----- test_add_user started -----
+2026/01/12 20:18:08: INFO: login successful
+2026/01/12 20:18:22: INFO: add new user successfully
+2026/01/12 20:19:11: INFO: ----- test_add_user started -----
+2026/01/12 20:19:18: INFO: login successful
+2026/01/12 20:19:42: INFO: add new user successfully
+2026/01/12 20:21:07: INFO: ----- test_add_user started -----
+2026/01/12 20:21:13: INFO: login successful
+2026/01/12 20:21:28: INFO: add new user successfully
+2026/01/12 20:23:27: INFO: ----- test_add_user started -----
+2026/01/12 20:23:39: INFO: login successful
+2026/01/12 20:23:54: INFO: add new user successfully
+2026/01/12 20:24:24: INFO: ----- test_title_verification started -----
+2026/01/12 20:24:28: INFO: test_title_verification PASSED (title matched)
+2026/01/12 20:24:32: INFO: ----- test_valid_login started -----
+2026/01/12 20:25:07: INFO: test_valid_login PASSED (dashboard text matched)
+2026/01/12 20:25:10: INFO: ----- test_invalid_login started -----
+2026/01/12 20:25:18: INFO: test_invalid_login PASSED (error message matched)
+2026/01/12 20:25:32: INFO: ----- test_title_verification started -----
+2026/01/12 20:25:36: INFO: test_title_verification PASSED (title matched)
+2026/01/12 20:25:39: INFO: ----- test_valid_login started -----
+2026/01/12 20:25:48: INFO: test_valid_login PASSED (dashboard text matched)
+2026/01/12 20:25:51: INFO: ----- test_invalid_login started -----
+2026/01/12 20:25:59: INFO: test_invalid_login PASSED (error message matched)
+2026/01/12 20:26:26: INFO: ----- test_add_user started -----
+2026/01/12 20:26:31: INFO: login successful
+2026/01/12 20:26:47: INFO: add new user successfully

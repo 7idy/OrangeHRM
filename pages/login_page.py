@@ -31,8 +31,8 @@ class LoginPage(BasePage): # LoginPage inherits from BasePage
     def click_login(self):
         self.do_click(self.BUTTON_LOGIN)
 
-    # logout
-    def logout(self):
+    # click logout link
+    def click_logout(self):
         self.do_click(self.USER_DROPDOWN)
         self.do_click(self.LOGOUT_LINK)
 

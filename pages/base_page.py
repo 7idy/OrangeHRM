@@ -32,3 +32,10 @@ class BasePage:
             return self.wait.until(EC.visibility_of_element_located(locator))
         except TimeoutException:
             return False
+
+    # wait for an element to invisible
+    def wait_until_invisible(self, locator):
+        try:
+            return self.wait.until(EC.invisibility_of_element_located(locator))
+        except TimeoutException:
+            return False

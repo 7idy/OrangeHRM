@@ -15,9 +15,9 @@ class TestLogin01:
         self.logger.info("----- test_title_verification started -----")
         self.driver = setup
         self.driver.get(self.base_URL)
+
         act_title = self.driver.title   # actual title
         exp_title = "OrangeHRM"     # expected title
-
         # if act_title != exp_title, show Expected title... but got...
         assert act_title == exp_title, f"Expected title: '{exp_title}', but got: '{act_title}'"
         self.logger.info("test_title_verification PASSED (title matched)")
@@ -27,13 +27,14 @@ class TestLogin01:
         self.logger.info("----- test_valid_login started -----")
         self.driver = setup
         self.driver.get(self.base_URL)
+
         self.lp = LoginPage(self.driver)
         self.lp.enter_username(self.username)
         self.lp.enter_password(self.password)
         self.lp.click_login()
+
         act_dashboard = self.lp.get_dashboard_header_text()
         exp_dashboard = "Dashboard"
-
         if act_dashboard != exp_dashboard:
             self.driver.save_screenshot(".//screenshots//test_valid_login.png")
             self.logger.info("test_valid_login FAILED (dashboard not matched)")
@@ -46,13 +47,14 @@ class TestLogin01:
         self.logger.info("----- test_invalid_login started -----")
         self.driver = setup
         self.driver.get(self.base_URL)
+
         self.lp = LoginPage(self.driver)
         self.lp.enter_username(self.invalid_username)
         self.lp.enter_password(self.password)
         self.lp.click_login()
+
         act_err_msg = self.lp.get_error_message_text()
         exp_err_msg = "Invalid credentials"
-
         if act_err_msg != exp_err_msg:
             self.driver.save_screenshot(".//screenshots//test_invalid_login.png")
             self.logger.info("test_invalid_login FAILED (error message not matched)")
