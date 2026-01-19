@@ -1,4 +1,5 @@
 # This test case module verifies the login functionality of the OrangeHRM application.
+import pytest
 from pages.login_page import LoginPage
 from utils.read_properties import ReadConfig
 from utils.logger import LoggerMaker
@@ -11,6 +12,7 @@ class TestLogin01:
     logger = LoggerMaker.log_generator()
 
     # Test case to verify the title of the login page
+    @pytest.mark.sanity
     def test_title_verification(self, setup):
         self.logger.info("----- test_title_verification started -----")
         self.driver = setup
@@ -23,6 +25,8 @@ class TestLogin01:
         self.logger.info("test_title_verification PASSED (title matched)")
 
     # Test case to verify login with valid credentials
+    @pytest.mark.sanity
+    @pytest.mark.regression
     def test_valid_login(self, setup):
         self.logger.info("----- test_valid_login started -----")
         self.driver = setup
@@ -43,6 +47,7 @@ class TestLogin01:
         self.logger.info("test_valid_login PASSED (dashboard text matched)")
 
     # Test case to verify login with invalid credentials
+    @pytest.mark.sanity
     def test_invalid_login(self, setup):
         self.logger.info("----- test_invalid_login started -----")
         self.driver = setup

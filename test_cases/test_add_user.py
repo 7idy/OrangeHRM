@@ -1,4 +1,5 @@
 import time
+import pytest
 from utils.logger import LoggerMaker
 from pages.add_user_page import AddUserPage
 from pages.login_page import LoginPage
@@ -11,6 +12,7 @@ class TestAddUser:
     password = ReadConfig.get_password()
     emp_name = f"baotest{int(time.time())}" # unique employee name using timestamp
 
+    @pytest.mark.regression
     def test_add_user(self, setup):
         self.logger.info("----- test_add_user started -----")
         self.driver = setup
