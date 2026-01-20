@@ -1,4 +1,5 @@
 # This test case verifies the login functionality data-driven execution using data from an Excel file.
+import pytest
 from pages.login_page import LoginPage
 from utils.read_properties import ReadConfig
 from utils.logger import LoggerMaker
@@ -11,6 +12,7 @@ class TestLogin02:
     status_list = [] # to store pass/fail status of each test iteration
 
     # Test case to verify login with valid credentials using data-driven
+    @pytest.mark.regression
     def test_valid_login_data_driven(self, setup):
         self.logger.info("test_valid_login_data_driven started")
         self.driver = setup
@@ -34,7 +36,7 @@ class TestLogin02:
                 if self.exp_result == "Yes":
                     self.logger.info("Test data driven login PASSED")
                     self.status_list.append("Pass")
-                    self.lp.logout()
+                    self.lp.click_logout()
                 else: # if self.exp_result is "No"
                     self.logger.info("Test data driven login FAILED")
                     self.status_list.append("Fail")
