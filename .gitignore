@@ -1,0 +1,14 @@
+# File .gitignore giúp loại bỏ các file và thư mục không cần thiết khi update code lên GitHub.
+# Giúp bạn loại bỏ các file tạm thời, file cấu hình cá nhân, và các thư mục chứa dữ liệu lớn mà không cần thiết.
+# CẤU HÌNH PYCHARM
+.idea/
+.venv/
+venv/
+# Loại bỏ các file tạm thời và file biên dịch Python
+*.pyc
+__pycache__/
+
+# FILE BÁO CÁO, KẾT QUẢ, LOG
+#logs/*.log
+#reports/
+#screenshots/
